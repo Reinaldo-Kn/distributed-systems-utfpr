@@ -198,6 +198,7 @@ def list_all():
 
         print(f"{id} | {owner} | {cat} | {days} | {price:.2f} | {city}")
 
+# | 2 bytes ID | 1 byte owner_len | owner | 1 byte cat_len | cat | 1 byte days | 8 bytes price | 1 byte city_len | city |
 
 print("Welcome to the Cat Babysitter Service!")
 print(CAT_ASCII)

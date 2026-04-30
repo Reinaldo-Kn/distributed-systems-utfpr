@@ -34,3 +34,13 @@ To run Python commands inside the project environment:
 uv run python your_script.py
 ```
 
+For Project 2, you can run automatic with the bash script, but `tmux` is required:
+
+```bash
+./project-2-rmi-cat-babysitter/run_all.sh
+```
+Tmux uses similar commands as vim, to enter the command mode, press `Ctrl + b` and then the desired command. For example, to get out of a tmux session, you can press `Ctrl + b` and then `d` to detach from the session. 
+To end all tmux sessions:
+```bash
+tmux kill-server
+```
