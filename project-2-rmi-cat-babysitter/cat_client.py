@@ -138,6 +138,9 @@ print(CAT_ASCII)
 
 register_pyro_serializers()
 remote = Proxy("PYRONAME:reinaldoKN@127.0.0.1")
+input("[WIRESHARK] Press Enter after capturing packets right after Proxy creation...")
+remote._pyroBind()
+input("[WIRESHARK] Press Enter after capturing packets right after Proxy bind...")
 
 while True:
     try:
@@ -153,6 +156,7 @@ while True:
             delete()
         elif op == 'l':
             list_all()
+            input("[WIRESHARK] Press Enter after capturing packets after a method call...")
         elif op == 'q':
             break
         else:

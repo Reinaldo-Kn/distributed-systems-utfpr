@@ -36,6 +36,7 @@ def main():
         print("Pyro5 server running")
         print(f"URI: {uri}")
         print("Registered in Name Server as: reinaldoKN")
+        input("[WIRESHARK] Press Enter after capturing NameService association packets...")
         daemon.requestLoop()
 
 
